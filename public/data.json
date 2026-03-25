@@ -283,9 +283,8 @@
     ]
   },
   "footer": {
-    "background": "/images/background/footer-pattern.png",
     "companyName": "DRAS Engineers and Contractors",
-    "description": "DRAS Engineers and Contractors delivers expertly planned, efficiently executed construction solutionsÃ¢ÂÂcombining quality workmanship, structural strength, and timely delivery across all types of building projects.",
+    "description": "DRAS Engineers and Contractors delivers expertly planned, efficiently executed construction solutionsÃÂ¢ÃÂÃÂcombining quality workmanship, structural strength, and timely delivery across all types of building projects.",
     "phones": [
       "+91 9552240737",
       "+91 9160460202"
@@ -299,9 +298,10 @@
       "Project",
       "Contact US"
     ],
-    "copyright": "Copyright ÃÂ© 2025 | All rights reserved",
+    "copyright": "Copyright © 2025 | All rights reserved",
     "brand": "DRAS",
-    "designer": "Blueclan Technologies Pvt Ltd"
+    "designer": "Blueclan Technologies Pvt Ltd",
+    "background": "/images/background/footer-pattern.png"
   },
   "aboutPage": {
     "hero": {
@@ -316,9 +316,9 @@
     "highlight": "VISIONARY",
     "paragraphs": [
       "Mr. Yogesh Wake founded Group Surya PEB & Constructions in 2011, marking the beginning of his entrepreneurial journey.",
-      "A B.E. Mechanical Engineer, Mr. Wake initially gained valuable experience as a Purchase Manager, overseeing new product development, vendor relationships, and sourcing activities. Recognizing the industryÃ¢ÂÂs shortcomings, he established Group Surya to provide world-class PEB solutions and advanced MEP services to both domestic and international clients.",
-      "Leveraging a skilled workforce, cutting-edge technologies, and strategic planning, Mr. Wake has successfully expanded his business interests into various sectors, including civil construction, real estate, and travel. His other ventures include GS PEB and Civil Works Pvt. Ltd., Group Surya Ã¢ÂÂ Heavy Metal Division, Yashasvi Realtors LLP, SureDrive Pvt. Ltd., and Sunmech Industries.",
-      "Under Mr. WakeÃ¢ÂÂs visionary leadership, Group Surya now employs over 450 professionals across India. He has been honored with prestigious awards such as the Sakal Excellence Award, the Melvin Jones Fellowship Award from Lions International Foundation, and the Green World Young Entrepreneurship Award."
+      "A B.E. Mechanical Engineer, Mr. Wake initially gained valuable experience as a Purchase Manager, overseeing new product development, vendor relationships, and sourcing activities. Recognizing the industryÃÂ¢ÃÂÃÂs shortcomings, he established Group Surya to provide world-class PEB solutions and advanced MEP services to both domestic and international clients.",
+      "Leveraging a skilled workforce, cutting-edge technologies, and strategic planning, Mr. Wake has successfully expanded his business interests into various sectors, including civil construction, real estate, and travel. His other ventures include GS PEB and Civil Works Pvt. Ltd., Group Surya ÃÂ¢ÃÂÃÂ Heavy Metal Division, Yashasvi Realtors LLP, SureDrive Pvt. Ltd., and Sunmech Industries.",
+      "Under Mr. WakeÃÂ¢ÃÂÃÂs visionary leadership, Group Surya now employs over 450 professionals across India. He has been honored with prestigious awards such as the Sakal Excellence Award, the Melvin Jones Fellowship Award from Lions International Foundation, and the Green World Young Entrepreneurship Award."
     ]
   },
   "values": {
