@@ -37,25 +37,25 @@
     "slides": [
       {
         "id": 1,
-        "title": "100% TURNKEY PROJECTS ...",
-        "subtitle": "100% TURNKEY PROJECTS ",
-        "image": "/images/slider/slider-01.0025ffb4.jpg",
+        "title": "DRAS ENGINEERS PROJECTS",
+        "subtitle": "",
+        "image": "",
         "button": "Our Projects",
         "link": "projects"
       },
       {
         "id": 2,
-        "title": "PEB STRUCTURES",
-        "subtitle": "PEB STRUCTURE",
-        "image": "/images/slider/slider-02.98196328.jpg",
+        "title": "POWERGRID PROJECTS",
+        "subtitle": "",
+        "image": "",
         "button": "View Work",
         "link": "projects"
       },
       {
         "id": 3,
-        "title": "Capacity : 72000 MT/Annum",
-        "subtitle": "CAPACITY : 72000 MT/Annum",
-        "image": "/images/slider/slider-03.fb0762f7.jpg",
+        "title": "GRINDWELL NORTON PROJECTS",
+        "subtitle": "",
+        "image": "",
         "button": "Explore More",
         "link": "about"
       }
@@ -193,7 +193,7 @@
           {
             "id": 3,
             "image": "/images/clients/client-01.9a10d4bc.jpg",
-            "title": "Renovation Of ED Office, Conference Hall & Staff Room On 1st Floor Of Office Building At RHQ Nagpur",
+            "title": "Renovation of ED Office, Conference Hall & Staff Room on 1st Floor of Office Building at RHQ Nagpur",
             "overview": {
               "challenge": "Renovation had to be done without interrupting office work.",
               "result": "Modern interiors and efficient layouts were delivered smoothly with zero disruption."
@@ -261,12 +261,21 @@
               "challenge": "Collapse of compound wall due to surcharge load, lack of column support over a 30 m stretch, and highly congested site conditions.",
               "result": "Redesigned with intermediate RCC columns and successfully reconstructed with ensured stability, quality, and safety."
             }
+          },
+          {
+            "id": 1774505065272,
+            "image": "/images/clients/client-04.0b7c6231.jpg",
+            "title": "Proposed Rooftop Polycarbonate Sheet Replacement Works",
+            "overview": {
+              "challenge": "Replacement of rooftop polycarbonate sheets at height under weather exposure, ensuring safety, leak-proofing, and minimal disruption to ongoing operations.",
+              "result": "Successfully completed installation with enhanced durability and weather resistance, meeting safety standards and project timelines."
+            }
           }
         ]
       },
       {
         "id": 1774504677607,
-        "client": "JOGA",
+        "client": "Logistic Park, Joga",
         "cards": [
           {
             "id": 1774504683385,
@@ -275,6 +284,21 @@
             "overview": {
               "challenge": "Execution of multiple large-scale structures (6 logistic sheds, 3 auxiliary buildings, and 725 RMT boundary wall) with coordination of resources, space management, and maintaining quality and safety across concurrent works.",
               "result": "Successfully delivered all structures within the planned scope, achieving required quality standards and project timelines."
+            }
+          }
+        ]
+      },
+      {
+        "id": 1774504943135,
+        "client": "MALL CONSTRUCTION",
+        "cards": [
+          {
+            "id": 1774504955279,
+            "image": "/images/clients/client-07.98be525d.jpg",
+            "title": "Inventys-Fire Water Tank, Butibori, nagpur",
+            "overview": {
+              "challenge": "Construction of a 27 lakh litre fire water tank involving large-capacity RCC works, strict fire safety compliance, waterproofing requirements, and coordination within an operational industrial environment.",
+              "result": "Successfully delivered a fully compliant and leak-proof fire water tank meeting capacity, safety standards, and project timelines."
             }
           }
         ]
