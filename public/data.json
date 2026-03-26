@@ -284,7 +284,7 @@
   },
   "footer": {
     "companyName": "DRAS Engineers and Contractors",
-    "description": "DRAS Engineers and Contractors delivers expertly planned, efficiently executed construction solutionsÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂcombining quality workmanship, structural strength, and timely delivery across all types of building projects.",
+    "description": "DRAS Engineers and Contractors delivers expertly planned, efficiently executed construction solutionsÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂcombining quality workmanship, structural strength, and timely delivery across all types of building projects.",
     "phones": [
       "+91 9552240737",
       "+91 9160460202"
@@ -298,7 +298,7 @@
       "Project",
       "Contact US"
     ],
-    "copyright": "Copyright ÃÂ© 2025 | All rights reserved",
+    "copyright": "Copyright ÃÂÃÂ© 2025 | All rights reserved",
     "brand": "DRAS",
     "designer": "Blueclan Technologies Pvt Ltd",
     "background": "/images/background/footer-pattern.png"
@@ -317,8 +317,7 @@
     "paragraphs": [
       "Mr. Deepanshu Dilipkumar Namdeo founded DRAS ENGINEERS AND CONTRACTORS in 2022, marking the beginning of his entrepreneurial journey.",
       "A B.E. Civil Engineer, Mr. Deepanshu initially gained valuable experience in Planning, Execution, Commercial (client and Sub- subcontractor billing), procurement and contract of Residential Buildings, Commercial Buildings, Industrial Buildings, and Institutional Building.",
-      "With a passion for construction and a strong background in the industry, he has embarked on this exciting journey to offer exceptional construction solutions tailored to the unique needs of our clients.",
-      "We take pride in our attention to detail, adherence to industry standards, and commitment to excellence. Our goal is to deliver projects on time, within budget, and with the highest level of craftsmanship."
+      "With a passion for construction and a strong background in the industry, he has embarked on this exciting journey to offer exceptional construction solutions tailored to the unique needs of our clients."
     ]
   },
   "values": {
@@ -335,6 +334,12 @@
         "icon": "Flag",
         "title": "Mission",
         "description": "To deliver phenomenal construction services, built on integrity, quality, and client satisfaction while fostering long-term relationships with our partners and communities."
+      },
+      {
+        "id": 1774501800429,
+        "icon": "Target",
+        "title": "Goal",
+        "description": "We take pride in our attention to detail, adherence to industry standards, and commitment to excellence. Our goal is to deliver projects on time, within budget, and with the highest level of craftsmanship."
       }
     ]
   },
