@@ -125,6 +125,12 @@
         "visible": true,
         "name": "Client 8",
         "logo": "/images/clients/client-08.8b86e021.jpg"
+      },
+      {
+        "id": 1774504815368,
+        "name": "",
+        "logo": "",
+        "visible": true
       }
     ]
   },
@@ -254,6 +260,21 @@
             "overview": {
               "challenge": "Collapse of compound wall due to surcharge load, lack of column support over a 30 m stretch, and highly congested site conditions.",
               "result": "Redesigned with intermediate RCC columns and successfully reconstructed with ensured stability, quality, and safety."
+            }
+          }
+        ]
+      },
+      {
+        "id": 1774504677607,
+        "client": "JOGA",
+        "cards": [
+          {
+            "id": 1774504683385,
+            "image": "/dras-logo.jpeg",
+            "title": "Proposed Logistic Park, Joga, Saoner ,Dist - Nagpur",
+            "overview": {
+              "challenge": "Execution of multiple large-scale structures (6 logistic sheds, 3 auxiliary buildings, and 725 RMT boundary wall) with coordination of resources, space management, and maintaining quality and safety across concurrent works.",
+              "result": "Successfully delivered all structures within the planned scope, achieving required quality standards and project timelines."
             }
           }
         ]
