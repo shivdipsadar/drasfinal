@@ -284,7 +284,7 @@
   },
   "footer": {
     "companyName": "DRAS Engineers and Contractors",
-    "description": "DRAS Engineers and Contractors delivers expertly planned, efficiently executed construction solutionsÃÂÃÂ¢ÃÂÃÂÃÂÃÂcombining quality workmanship, structural strength, and timely delivery across all types of building projects.",
+    "description": "DRAS Engineers and Contractors delivers expertly planned, efficiently executed construction solutionsÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂcombining quality workmanship, structural strength, and timely delivery across all types of building projects.",
     "phones": [
       "+91 9552240737",
       "+91 9160460202"
@@ -298,7 +298,7 @@
       "Project",
       "Contact US"
     ],
-    "copyright": "Copyright Â© 2025 | All rights reserved",
+    "copyright": "Copyright ÃÂ© 2025 | All rights reserved",
     "brand": "DRAS",
     "designer": "Blueclan Technologies Pvt Ltd",
     "background": "/images/background/footer-pattern.png"
@@ -315,10 +315,10 @@
     "title": "OUR",
     "highlight": "VISIONARY",
     "paragraphs": [
-      "Mr. Yogesh Wake founded Group Surya PEB & Constructions in 2011, marking the beginning of his entrepreneurial journey.",
-      "A B.E. Mechanical Engineer, Mr. Wake initially gained valuable experience as a Purchase Manager, overseeing new product development, vendor relationships, and sourcing activities. Recognizing the industryÃÂÃÂ¢ÃÂÃÂÃÂÃÂs shortcomings, he established Group Surya to provide world-class PEB solutions and advanced MEP services to both domestic and international clients.",
-      "Leveraging a skilled workforce, cutting-edge technologies, and strategic planning, Mr. Wake has successfully expanded his business interests into various sectors, including civil construction, real estate, and travel. His other ventures include GS PEB and Civil Works Pvt. Ltd., Group Surya ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Heavy Metal Division, Yashasvi Realtors LLP, SureDrive Pvt. Ltd., and Sunmech Industries.",
-      "Under Mr. WakeÃÂÃÂ¢ÃÂÃÂÃÂÃÂs visionary leadership, Group Surya now employs over 450 professionals across India. He has been honored with prestigious awards such as the Sakal Excellence Award, the Melvin Jones Fellowship Award from Lions International Foundation, and the Green World Young Entrepreneurship Award."
+      "Mr. Deepanshu Dilipkumar Namdeo founded DRAS ENGINEERS AND CONTRACTORS in 2022, marking the beginning of his entrepreneurial journey.",
+      "A B.E. Civil Engineer, Mr. Deepanshu initially gained valuable experience in Planning, Execution, Commercial (client and Sub- subcontractor billing), procurement and contract of Residential Buildings, Commercial Buildings, Industrial Buildings, and Institutional Building.",
+      "With a passion for construction and a strong background in the industry, he has embarked on this exciting journey to offer exceptional construction solutions tailored to the unique needs of our clients.",
+      "We take pride in our attention to detail, adherence to industry standards, and commitment to excellence. Our goal is to deliver projects on time, within budget, and with the highest level of craftsmanship."
     ]
   },
   "values": {
@@ -328,19 +328,13 @@
         "id": 1,
         "icon": "Eye",
         "title": "Vision",
-        "description": "To create the perfect amalgamation of skilled workforces, latest technologies, and streamlined processes through our organization to ensure quality, reliability, and reality in our installation process worldwide."
+        "description": "To create Structures that inspire, uplift, and leave a lasting legacy. We envision a future where our work stands as a testament to our unwavering commitment to excellence, Quality, and client satisfaction."
       },
       {
         "id": 2,
         "icon": "Flag",
         "title": "Mission",
-        "description": "To deliver state-of-the-art turnkey projects in PEB structures, Civil Designs, and MEP Installations to ensure world-class establishments across sectors and strive to carve a niche for our work ethics and values."
-      },
-      {
-        "id": 3,
-        "icon": "Target",
-        "title": "Goal",
-        "description": "To establish the trademark quality and reliability of the Group Surya globally by persistently evolving our services with modern technology to precisely serve the needs and goals of our clients."
+        "description": "To deliver phenomenal construction services, built on integrity, quality, and client satisfaction while fostering long-term relationships with our partners and communities."
       }
     ]
   },
