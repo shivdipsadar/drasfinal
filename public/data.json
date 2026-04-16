@@ -39,7 +39,7 @@
         "id": 1,
         "title": "DRAS ENGINEERS PROJECTS",
         "subtitle": "",
-        "image": "",
+        "image": "./images/slider/slider-01.0025ffb4.jpg",
         "button": "Our Projects",
         "link": "projects"
       },
@@ -47,7 +47,7 @@
         "id": 2,
         "title": "POWERGRID PROJECTS",
         "subtitle": "",
-        "image": "",
+        "image": "./images/slider/slider-02.98196328.jpg",
         "button": "View Work",
         "link": "projects"
       },
@@ -55,7 +55,7 @@
         "id": 3,
         "title": "GRINDWELL NORTON PROJECTS",
         "subtitle": "",
-        "image": "",
+        "image": "./images/slider/slider-03.fb0762f7.jpg",
         "button": "Explore More",
         "link": "about"
       }
