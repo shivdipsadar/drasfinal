@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import useData from "../hooks/useData";
 
 import AboutSection from "../components/About";
