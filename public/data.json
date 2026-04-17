@@ -415,28 +415,28 @@
     "items": [
       {
         "id": 1,
-        "visible": true,
+        "visible": false,
         "title": "RESIDENTIAL BUILDING",
         "image": "/images/sectors/residential.jpg",
         "description": "Residential buildings description"
       },
       {
         "id": 2,
-        "visible": true,
+        "visible": false,
         "title": "COMMERCIAL BUILDING",
         "image": "/images/sectors/commercial.jpg",
         "description": "Commercial buildings description"
       },
       {
         "id": 3,
-        "visible": true,
+        "visible": false,
         "title": "INSTITUTIONAL BUILDING",
         "image": "/images/sectors/institutional.jpg",
         "description": "Institutional buildings description"
       },
       {
         "id": 4,
-        "visible": true,
+        "visible": false,
         "title": "INDUSTRIAL BUILDING",
         "image": "/images/sectors/industrial.jpg",
         "description": "Industrial buildings description"
