@@ -131,6 +131,12 @@
         "name": "Client 9",
         "logo": "/images/1776433343708-MECL Logo.jpg",
         "visible": true
+      },
+      {
+        "id": 1776433520615,
+        "name": "Client 10",
+        "logo": "/images/1776433530106-toyal-logo-4.jpg",
+        "visible": true
       }
     ]
   },
