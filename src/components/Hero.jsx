@@ -90,12 +90,16 @@ const navigate = useNavigate();
               >
 
                 {/* Title */}
-                {slide.title && (
+                {/* {slide.title && (
                   <p className="text-blue-400 uppercase tracking-widest mb-3">
                     {slide.title}
                   </p>
+                )} */}
+                {slide.title && (
+                  <p className="text-white uppercase tracking-widest mb-3 font-bold italic underline">
+                    {slide.title}
+                  </p>
                 )}
-
                 {/* Subtitle */}
                 {slide.subtitle && (
                   <h1 className="text-3xl md:text-5xl font-bold mb-6">
