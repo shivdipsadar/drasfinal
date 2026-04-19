@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { getImageUrl } from "../utils/api";
+import { Link } from "react-router-dom";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -104,7 +105,7 @@ export default function Hero({ data }) {
 
                 {/* Button */}
                 {slide.button && slide.link && (
-                 import { Link } from "react-router-dom";
+                 
 
                   <Link
                     to="/projects"
