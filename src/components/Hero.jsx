@@ -104,10 +104,10 @@ export default function Hero({ data }) {
 
                 {/* Button */}
                 {slide.button && slide.link && (
+                 import { Link } from "react-router-dom";
+
                   <Link
-                    to={slide.link}
-                    smooth={true}
-                    duration={600}
+                    to="/projects"
                     className="inline-block bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-lg text-lg font-semibold cursor-pointer transition"
                   >
                     {slide.button}
