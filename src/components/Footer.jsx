@@ -6,7 +6,7 @@ import { getImageUrl } from "../utils/api";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Footer({ data }) {
+export default function Footer({ data,navbar }) {
 
   const footerRef = useRef(null);
 
@@ -102,36 +102,39 @@ export default function Footer({ data }) {
           </div>
         </div>
 
-        {/* ✅ COLUMN 4 */}
-        <div className="footer-item">
-          <h3 className="text-lg font-semibold text-gray-200 mb-6">
-            Site Map
-          </h3>
+       <div className="footer-item flex flex-col items-start">
+  
 
-          <ul className="space-y-2 text-gray-400 text-sm">
-            {footer.links?.map((link, index) => (
-              <li
-                key={index}
-                className="hover:text-white cursor-pointer transition"
-              >
-                {link}
-              </li>
-            ))}
-          </ul>
-        </div>
+  {navbar?.logo && (
+    <img
+      src={getImageUrl(navbar.logo)}
+      alt="Logo"
+      className="w-40 object-contain bg-white p-2 rounded"
+      onError={(e) => {
+        e.target.src = "https://via.placeholder.com/150x80?text=Logo";
+      }}
+    />
+  )}
+</div>
 
       </div>
 
       {/* 🔹 BOTTOM BAR */}
-      <div className="border-t border-gray-700 py-6 text-center text-sm text-gray-400 footer-item">
+   <div className="border-t border-gray-700 py-6 text-center text-sm text-gray-400 footer-item">
 
-        {footer.copyright || "Copyright © 2025 | All rights reserved"}{" "}
-        <span className="text-white">{footer.brand || "DRAS"}</span> | Designed By{" "}
-        <span className="text-cyan-400">
-          {footer.designer || "Your Company"}
-        </span>
+  
+  <span className="text-white">{"DRAS"}</span> | Designed By{" "}
 
-      </div>
+  <a
+    href="https://www.blueclan.tech/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-cyan-400 hover:text-cyan-300 transition"
+  >
+    Blueclan Technologies
+  </a>
+
+</div>
 
     </footer>
   );

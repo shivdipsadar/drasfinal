@@ -130,10 +130,10 @@ export default function Clients() {
         </section>
       )}
 
-      {/* 🔥 SERVICE OVERVIEW */}
+      {/* 🔥 SERVICE OVERVIEW
       {data?.serviceOverview && (
         <ServiceOverview data={data.serviceOverview} />
-      )}
+      )} */}
     </>
   );
 }

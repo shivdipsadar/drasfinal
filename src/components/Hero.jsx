@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { getImageUrl } from "../utils/api";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -58,7 +58,7 @@ export default function Hero({ data }) {
       </section>
     );
   }
-
+const navigate = useNavigate();
   return (
     <section className="w-full relative">
       <Slider {...settings}>
@@ -104,16 +104,14 @@ export default function Hero({ data }) {
                 )}
 
                 {/* Button */}
-                {slide.button && slide.link && (
-                 
-
-                  <Link
-                    to="/projects"
-                    className="inline-block bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-lg text-lg font-semibold cursor-pointer transition"
-                  >
-                    {slide.button}
-                  </Link>
-                )}
+               {slide.button && slide.link && (
+  <button
+    onClick={() => navigate(`/projects`)}   // 🔥 navigation
+    className="inline-block bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-lg text-lg font-semibold cursor-pointer transition"
+  >
+    {slide.button}
+  </button>
+)}
 
               </motion.div>
             </div>

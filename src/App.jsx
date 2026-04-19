@@ -21,7 +21,7 @@ const Layout = ({ children, data }) => {
     <>
       <Navbar data={data?.navbar} />
       {children}
-      <Footer data={data?.footer} />
+      <Footer data={data?.footer} navbar={data?.navbar} />
     </>
   );
 };

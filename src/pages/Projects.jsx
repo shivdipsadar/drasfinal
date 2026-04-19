@@ -4,6 +4,7 @@ import useData from "../hooks/useData";
 import ServiceOverview from "../components/ServiceOverview";
 import Sectors from "../components/Sectors";
 import PageHero from "../components/PageHero";
+import ProjectsSlider from "../components/ProjectsSlider";
 
 const Projects = () => {
   const { data, loading, error } = useData();
@@ -39,9 +40,13 @@ const Projects = () => {
         />
       )}
 
-      {/* SERVICE OVERVIEW */}
+      {/* SERVICE OVERVIEW
       {data?.serviceOverview && (
         <ServiceOverview data={data.serviceOverview} />
+      )} */}
+      {/* PROJECTS */}
+      {data.projects?.visible && data.projects?.items?.length > 0 && (
+        <ProjectsSlider data={data.projects} />
       )}
 
       {/* SECTORS */}
