@@ -370,7 +370,7 @@
       "Project",
       "Contact US"
     ],
-    "copyright": "Copyright BYCC ÃÂÃÂÃÂÃÂ© 2026 | All rights reserved",
+    "copyright": "Copyright BYCC ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© 2026 | All rights reserved",
     "brand": "DRAS",
     "designer": "",
     "background": "/images/background/footer-pattern.png"
@@ -421,28 +421,28 @@
     "items": [
       {
         "id": 1,
-        "visible": false,
+        "visible": true,
         "title": "RESIDENTIAL BUILDING",
         "image": "/images/sectors/residential.jpg",
         "description": "Residential buildings description"
       },
       {
         "id": 2,
-        "visible": false,
+        "visible": true,
         "title": "COMMERCIAL BUILDING",
         "image": "/images/sectors/commercial.jpg",
         "description": "Commercial buildings description"
       },
       {
         "id": 3,
-        "visible": false,
+        "visible": true,
         "title": "INSTITUTIONAL BUILDING",
         "image": "/images/sectors/institutional.jpg",
         "description": "Institutional buildings description"
       },
       {
         "id": 4,
-        "visible": false,
+        "visible": true,
         "title": "INDUSTRIAL BUILDING",
         "image": "/images/sectors/industrial.jpg",
         "description": "Industrial buildings description"
