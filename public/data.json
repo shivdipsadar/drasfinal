@@ -1,5 +1,5 @@
 {
-  "Change counter" : 1,
+  "Change counter": 1,
   "navbar": {
     "logo": "/dras-logo.jpeg",
     "title": "DRAS Engineers and Contractors",
@@ -142,7 +142,7 @@
     ]
   },
   "services": {
-    "visible": false,
+    "visible": true,
     "title": "OUR KEY SERVICES",
     "items": [
       {
@@ -171,149 +171,146 @@
       }
     ]
   },
-   "projects": {
-  "visible": true,
-  "title": "SOME OF OUR PROMINENT PROJECTS",
-  "items": [
-    {
-      "id": 1,
-      "client": "POWER GRID CORPORATION OF INDIA LIMITED",
-      "cards": [
-        {
-          "id": 1,
-          "image": "/images/clients/client-01.9a10d4bc.jpg",
-          "title": "Construction of RCC Drain, Repairing of Existing drain & Sump Pit at Township Area of WR-1 RHQ, Nagpur",
-          "overview": {
-            "requirement": "Client required reconstruction of damaged drainage system with improved strength and proper water flow management.",
-            "completion": "Successfully completed RCC drainage system with enhanced durability and smooth operation without disruption.",
-            "media": {
-              "images": [
-                "/images/projects/site1.jpg",
-                "/images/projects/site2.jpg",
-                "/images/projects/site3.jpg"
-              ],
-              "videos": [
-                "https://www.youtube.com/embed/ysz5S6PUM-U"
-              ]
+  "projects": {
+    "visible": true,
+    "title": "SOME OF OUR PROMINENT PROJECTS",
+    "items": [
+      {
+        "id": 1,
+        "client": "POWER GRID CORPORATION OF INDIA LIMITED",
+        "cards": [
+          {
+            "id": 1,
+            "image": "/images/clients/client-01.9a10d4bc.jpg",
+            "title": "Construction of RCC Drain, Repairing of Existing drain & Sump Pit at Township Area of WR-1 RHQ, Nagpur",
+            "overview": {
+              "requirement": "Client required reconstruction of damaged drainage system with improved strength and proper water flow management.",
+              "completion": "Successfully completed RCC drainage system with enhanced durability and smooth operation without disruption.",
+              "media": {
+                "images": [
+                  "/images/projects/site1.jpg",
+                  "/images/projects/site2.jpg",
+                  "/images/projects/site3.jpg"
+                ],
+                "videos": [
+                  "https://www.youtube.com/embed/ysz5S6PUM-U"
+                ]
+              }
+            }
+          },
+          {
+            "id": 2,
+            "image": "/images/clients/client-01.9a10d4bc.jpg",
+            "title": "Installation Of False Ceiling & Electrification Work",
+            "overview": {
+              "requirement": "Modern ceiling design with proper lighting and electrical layout within limited timeline.",
+              "completion": "Delivered aesthetic ceiling with efficient electrical system improving overall hall appearance.",
+              "media": {
+                "images": [
+                  "/images/projects/site4.jpg",
+                  "/images/projects/site5.jpg"
+                ],
+                "videos": [
+                  "https://www.youtube.com/embed/dQw4w9WgXcQ"
+                ]
+              }
             }
           }
-        },
-        {
-          "id": 2,
-          "image": "/images/clients/client-01.9a10d4bc.jpg",
-          "title": "Installation Of False Ceiling & Electrification Work",
-          "overview": {
-            "requirement": "Modern ceiling design with proper lighting and electrical layout within limited timeline.",
-            "completion": "Delivered aesthetic ceiling with efficient electrical system improving overall hall appearance.",
-            "media": {
-              "images": [
-                "/images/projects/site4.jpg",
-                "/images/projects/site5.jpg"
-              ],
-              "videos": [
-                "https://www.youtube.com/embed/dQw4w9WgXcQ"
-              ]
+        ]
+      },
+      {
+        "id": 2,
+        "client": "MINERAL EXPLORATION AND CONSULTANCY LIMITED",
+        "cards": [
+          {
+            "id": 1,
+            "image": "/images/1776434299772-MECL Logo.jpg",
+            "title": "Security Post and Canopy at Main gate",
+            "overview": {
+              "requirement": "Safe dismantling and reconstruction of security post under high traffic and safety constraints.",
+              "completion": "Completed full RCC and finishing work including electrical and plumbing with high quality output.",
+              "media": {
+                "images": [
+                  "/images/projects/site6.jpg",
+                  "/images/projects/site7.jpg"
+                ],
+                "videos": [
+                  "https://www.youtube.com/embed/ysz5S6PUM-U"
+                ]
+              }
             }
           }
-        }
-      ]
-    },
-
-    {
-      "id": 2,
-      "client": "MINERAL EXPLORATION AND CONSULTANCY LIMITED",
-      "cards": [
-        {
-          "id": 1,
-          "image": "/images/1776434299772-MECL Logo.jpg",
-          "title": "Security Post and Canopy at Main gate",
-          "overview": {
-            "requirement": "Safe dismantling and reconstruction of security post under high traffic and safety constraints.",
-            "completion": "Completed full RCC and finishing work including electrical and plumbing with high quality output.",
-            "media": {
-              "images": [
-                "/images/projects/site6.jpg",
-                "/images/projects/site7.jpg"
-              ],
-              "videos": [
-                "https://www.youtube.com/embed/ysz5S6PUM-U"
-              ]
+        ]
+      },
+      {
+        "id": 3,
+        "client": "GRINDWELL NORTON LIMITED",
+        "cards": [
+          {
+            "id": 1,
+            "image": "/images/clients/client-08.8b86e021.jpg",
+            "title": "RCC Machine Foundation Modification",
+            "overview": {
+              "requirement": "Modify existing foundation under strict safety and limited space conditions within deadline.",
+              "completion": "Executed successfully with proper planning and delivered within 15 days timeline.",
+              "media": {
+                "images": [
+                  "/images/projects/site8.jpg",
+                  "/images/projects/site9.jpg"
+                ],
+                "videos": [
+                  "https://www.youtube.com/embed/dQw4w9WgXcQ"
+                ]
+              }
             }
           }
-        }
-      ]
-    },
-
-    {
-      "id": 3,
-      "client": "GRINDWELL NORTON LIMITED",
-      "cards": [
-        {
-          "id": 1,
-          "image": "/images/clients/client-08.8b86e021.jpg",
-          "title": "RCC Machine Foundation Modification",
-          "overview": {
-            "requirement": "Modify existing foundation under strict safety and limited space conditions within deadline.",
-            "completion": "Executed successfully with proper planning and delivered within 15 days timeline.",
-            "media": {
-              "images": [
-                "/images/projects/site8.jpg",
-                "/images/projects/site9.jpg"
-              ],
-              "videos": [
-                "https://www.youtube.com/embed/dQw4w9WgXcQ"
-              ]
+        ]
+      },
+      {
+        "id": 4,
+        "client": "LEMKEN India Agro Equipment Pvt Ltd",
+        "cards": [
+          {
+            "id": 1,
+            "image": "/images/clients/client-04.0b7c6231.jpg",
+            "title": "Compound Wall Construction",
+            "overview": {
+              "requirement": "Reconstruction of collapsed wall with better support and structural stability.",
+              "completion": "Rebuilt wall with RCC columns ensuring safety, durability and improved strength.",
+              "media": {
+                "images": [
+                  "/images/projects/site10.jpg",
+                  "/images/projects/site11.jpg"
+                ],
+                "videos": []
+              }
             }
           }
-        }
-      ]
-    },
-
-    {
-      "id": 4,
-      "client": "LEMKEN India Agro Equipment Pvt Ltd",
-      "cards": [
-        {
-          "id": 1,
-          "image": "/images/clients/client-04.0b7c6231.jpg",
-          "title": "Compound Wall Construction",
-          "overview": {
-            "requirement": "Reconstruction of collapsed wall with better support and structural stability.",
-            "completion": "Rebuilt wall with RCC columns ensuring safety, durability and improved strength.",
-            "media": {
-              "images": [
-                "/images/projects/site10.jpg",
-                "/images/projects/site11.jpg"
-              ],
-              "videos": []
-            }
-          }
-        }
-      ]
-    }
-  ]
-},
-"upcomingProjects": {
-  "visible": true,
-  "title": "Upcoming Projects",
-  "items": [
-    {
-      "id": 1,
-      "title": "New Industrial Shed Project",
-      "image": "/images/projects/site1.jpg"
-    },
-    {
-      "id": 2,
-      "title": "Commercial Office Renovation",
-      "image": "/images/projects/site2.jpg"
-    },
-    {
-      "id": 3,
-      "title": "Residential Building Work",
-      "image": "/images/projects/site3.jpg"
-    }
-  ]
-},
+        ]
+      }
+    ]
+  },
+  "upcomingProjects": {
+    "visible": true,
+    "title": "Upcoming Projects",
+    "items": [
+      {
+        "id": 1,
+        "title": "New Industrial Shed Project",
+        "image": "/images/projects/site1.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Commercial Office Renovation",
+        "image": "/images/projects/site2.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Residential Building Work",
+        "image": "/images/projects/site3.jpg"
+      }
+    ]
+  },
   "serviceOverview": {
     "visible": true,
     "title": "OUR SERVICE OVERVIEW",
@@ -373,7 +370,7 @@
       "Project",
       "Contact US"
     ],
-    "copyright": "Copyright BYCC ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© 2026 | All rights reserved",
+    "copyright": "Copyright BYCC ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© 2026 | All rights reserved",
     "brand": "DRAS",
     "designer": "",
     "background": "/images/background/footer-pattern.png"
