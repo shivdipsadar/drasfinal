@@ -1,5 +1,5 @@
-import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { getData, getImageUrl } from "../utils/api";
 import PageHero from "../components/PageHero";
 
@@ -40,10 +40,13 @@ export default function ProjectOverview() {
     );
   }
 
+  const images = card?.overview?.media?.images || [];
+  const videos = card?.overview?.media?.videos || [];
+
   return (
     <div className="bg-white">
 
-      {/* 🔹 HERO (use card image) */}
+      {/* 🔹 HERO */}
       <PageHero
         title="Project Overview"
         backgroundImage={
@@ -52,7 +55,6 @@ export default function ProjectOverview() {
         }
       />
 
-      {/* 🔹 CONTENT */}
       <div className="max-w-6xl mx-auto px-6 py-10">
 
         {/* PROJECT NAME */}
@@ -67,41 +69,64 @@ export default function ProjectOverview() {
           {card.title}
         </div>
 
-        {/* CHALLENGE */}
+        {/* 1️⃣ CLIENT REQUIREMENT */}
         <div className="border-b py-6">
           <h3 className="text-lg font-semibold mb-2">
-            1. The Challenge
+            1. Client Requirement
           </h3>
           <p className="text-gray-600 text-sm">
-            {card?.overview?.challenge || "No data available"}
+            {card?.overview?.requirement || "No data available"}
           </p>
         </div>
 
-        {/* VISUAL PROOF (same image) */}
+        {/* 2️⃣ SITE PHOTOS + VIDEOS */}
         <div className="border-b py-6">
           <h3 className="text-lg font-semibold mb-4">
-            2. Visual Proof Of Expertise
+            2. Site Photos
           </h3>
 
-          <div className="flex justify-center">
-            <img
-              src={
-                getImageUrl(card.image) ||
-                "https://via.placeholder.com/400"
-              }
-              alt="Project"
-              className="max-h-80 object-contain"
-            />
-          </div>
+          {/* IMAGES GRID */}
+          {images.length > 0 ? (
+            <div className="grid md:grid-cols-3 gap-4 mb-6">
+              {images.map((img, index) => (
+                <img
+                  key={index}
+                  src={getImageUrl(img)}
+                  alt={`Site ${index}`}
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+              ))}
+            </div>
+          ) : (
+            <p className="text-gray-500 text-sm mb-4">
+              No images available
+            </p>
+          )}
+
+          {/* VIDEOS */}
+          {videos.length > 0 && (
+            <div className="space-y-4">
+              {videos.map((video, index) => (
+                <div key={index} className="w-full">
+                  <iframe
+                    src={video}
+                    title={`Video ${index}`}
+                    className="w-full h-64 rounded-lg"
+                    allowFullScreen
+                  />
+                </div>
+              ))}
+            </div>
+          )}
         </div>
 
-        {/* RESULT */}
+        {/* 3️⃣ FINAL COMPLETION */}
         <div className="py-6">
           <h3 className="text-lg font-semibold mb-2">
-            3. Result
+            3. Final Completion
           </h3>
           <p className="text-gray-600 text-sm">
-            {card?.overview?.result || "No data available"}
+            {card?.overview?.completion || "No data available"}
           </p>
         </div>
 

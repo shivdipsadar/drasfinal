@@ -171,146 +171,127 @@
     ]
   },
   "projects": {
-    "visible": true,
-    "title": "SOME OF OUR PROMINENT PROJECTS",
-    "items": [
-      {
-        "id": 1,
-        "client": "POWER GRID CORPORATION OF INDIA LIMITED",
-        "cards": [
-          {
-            "id": 1,
-            "image": "/images/clients/client-01.9a10d4bc.jpg",
-            "title": "Construction of RCC Drain, Repairing of Existing drain & Sump Pit at Township Area of WR-1 RHQ, Nagpur",
-            "overview": {
-              "challenge": "The existing masonry drain was damaged and required complete dismantling and reconstruction under space constraints.",
-              "result": "The RCC drain was successfully constructed with improved durability and proper drainage system without affecting operations."
-            }
-          },
-          {
-            "id": 2,
-            "image": "/images/clients/client-01.9a10d4bc.jpg",
-            "title": "Installation Of False Ceiling & Electrification Work of Sabrang Hall at Powergrid Pocket-A, RHQ, Nagpur",
-            "overview": {
-              "challenge": "The hall required modern false ceiling installation along with proper electrical setup under tight deadlines.",
-              "result": "A high-quality ceiling and electrical system was installed, improving aesthetics and functionality."
-            }
-          },
-          {
-            "id": 3,
-            "image": "/images/clients/client-01.9a10d4bc.jpg",
-            "title": "Renovation of ED Office, Conference Hall & Staff Room on 1st Floor of Office Building at RHQ Nagpur",
-            "overview": {
-              "challenge": "Renovation had to be done without interrupting office work.",
-              "result": "Modern interiors and efficient layouts were delivered smoothly with zero disruption."
-            }
-          },
-          {
-            "id": 4,
-            "image": "/images/clients/client-01.9a10d4bc.jpg",
-            "title": "Dismantling of existing workstation and floor tiles for installation of new workstation at POWERGRID, Nagpur",
-            "overview": {
-              "challenge": "Existing infrastructure required safe dismantling and quick replacement.",
-              "result": "New workstations were installed efficiently with improved usability and design."
+  "visible": true,
+  "title": "SOME OF OUR PROMINENT PROJECTS",
+  "items": [
+    {
+      "id": 1,
+      "client": "POWER GRID CORPORATION OF INDIA LIMITED",
+      "cards": [
+        {
+          "id": 1,
+          "image": "/images/clients/client-01.9a10d4bc.jpg",
+          "title": "Construction of RCC Drain, Repairing of Existing drain & Sump Pit at Township Area of WR-1 RHQ, Nagpur",
+          "overview": {
+            "requirement": "Client required reconstruction of damaged drainage system with improved strength and proper water flow management.",
+            "completion": "Successfully completed RCC drainage system with enhanced durability and smooth operation without disruption.",
+            "media": {
+              "images": [
+                "/images/projects/site1.jpg",
+                "/images/projects/site2.jpg",
+                "/images/projects/site3.jpg"
+              ],
+              "videos": [
+                "https://www.youtube.com/embed/ysz5S6PUM-U"
+              ]
             }
           }
-        ]
-      },
-      {
-        "id": 2,
-        "client": "MINERAL EXPLORATION AND CONSULTANCY LIMITED",
-        "cards": [
-          {
-            "id": 1,
-            "image": "/images/1776434299772-MECL Logo.jpg",
-            "title": "Security Post and Canopy at Main gate, MECL, Seminary Hills, Nagpur",
-            "overview": {
-              "challenge": "Dismantling the existing security post at the high-traffic entrance of MECL, Nagpur under stringent safety protocols, phased permits, delayed site handover, and monsoon constraints.",
-              "result": "The project encompassed comprehensive execution of RCC, civil finishes (brickwork, plastering, tiling, painting, UPVC windows, flush and wooden doors), along with complete plumbing, sanitary, and electrical works."
+        },
+        {
+          "id": 2,
+          "image": "/images/clients/client-01.9a10d4bc.jpg",
+          "title": "Installation Of False Ceiling & Electrification Work",
+          "overview": {
+            "requirement": "Modern ceiling design with proper lighting and electrical layout within limited timeline.",
+            "completion": "Delivered aesthetic ceiling with efficient electrical system improving overall hall appearance.",
+            "media": {
+              "images": [
+                "/images/projects/site4.jpg",
+                "/images/projects/site5.jpg"
+              ],
+              "videos": [
+                "https://www.youtube.com/embed/dQw4w9WgXcQ"
+              ]
             }
           }
-        ]
-      },
-      {
-        "id": 1774503633431,
-        "client": "GRINDWELL NORTON LIMITED (SAINT GOBAIN GROUP OF COMPANY)",
-        "cards": [
-          {
-            "id": 1774503655863,
-            "image": "/images/clients/client-08.8b86e021.jpg",
-            "title": "Proposed Modification of RCC Machine Foundation at rindwell Norton Limited , G51, MIDC Butibori, Nagpur",
-            "overview": {
-              "challenge": "Modification of an existing machine foundation in a constrained factory core area under strict safety, limited access, unknown conditions, and a 15-day deadline, involving RCC demolition and manual material handling over 500 metres.",
-              "result": "Prepared and executed a detailed method statement aligning with client requirements, mitigated risks with enhanced resources, and successfully delivered the project on time acting as both consultant and contractor from specification to completion."
-            }
-          },
-          {
-            "id": 1774503788839,
-            "image": "/images/clients/client-08.8b86e021.jpg",
-            "title": "Proposed Construction of New Meter Room at Grindwell Norton, G51, MIDC Butibori, Nagpur",
-            "overview": {
-              "challenge": "Construction of a new meter room core and shell with basic finishes between two existing buildings, involving deep excavation near existing foundations and live electrical cables under tight space and high safety constraints.",
-              "result": "Developed and executed a detailed method statement, safely relocated live electrical cables, completed RCC foundation and plinth works, and progressing toward project delivery within 45 days in line with client expectations."
-            }
-          }
-        ]
-      },
-      {
-        "id": 1774504193495,
-        "client": "LEMKEN India Agro Equipment Pvt Ltd",
-        "cards": [
-          {
-            "id": 1774504197423,
-            "image": "/images/clients/client-04.0b7c6231.jpg",
-            "title": "Stone masonry (Random Rubble) Compound Wall & Road Cross Drainage work ",
-            "overview": {
-              "challenge": "Collapse of compound wall due to surcharge load, lack of column support over a 30 m stretch, and highly congested site conditions.",
-              "result": "Redesigned with intermediate RCC columns and successfully reconstructed with ensured stability, quality, and safety."
-            }
-          },
-          {
-            "id": 1774505065272,
-            "image": "/images/clients/client-04.0b7c6231.jpg",
-            "title": "Proposed Rooftop Polycarbonate Sheet Replacement Works",
-            "overview": {
-              "challenge": "Replacement of rooftop polycarbonate sheets at height under weather exposure, ensuring safety, leak-proofing, and minimal disruption to ongoing operations.",
-              "result": "Successfully completed installation with enhanced durability and weather resistance, meeting safety standards and project timelines."
+        }
+      ]
+    },
+
+    {
+      "id": 2,
+      "client": "MINERAL EXPLORATION AND CONSULTANCY LIMITED",
+      "cards": [
+        {
+          "id": 1,
+          "image": "/images/1776434299772-MECL Logo.jpg",
+          "title": "Security Post and Canopy at Main gate",
+          "overview": {
+            "requirement": "Safe dismantling and reconstruction of security post under high traffic and safety constraints.",
+            "completion": "Completed full RCC and finishing work including electrical and plumbing with high quality output.",
+            "media": {
+              "images": [
+                "/images/projects/site6.jpg",
+                "/images/projects/site7.jpg"
+              ],
+              "videos": [
+                "https://www.youtube.com/embed/ysz5S6PUM-U"
+              ]
             }
           }
-        ]
-      },
-      {
-        "id": 1774504677607,
-        "client": "Logistic Park, Joga",
-        "cards": [
-          {
-            "id": 1774504683385,
-            "image": "/dras-logo.jpeg",
-            "title": "Proposed Logistic Park, Joga, Saoner ,Dist - Nagpur",
-            "overview": {
-              "challenge": "Execution of multiple large-scale structures (6 logistic sheds, 3 auxiliary buildings, and 725 RMT boundary wall) with coordination of resources, space management, and maintaining quality and safety across concurrent works.",
-              "result": "Successfully delivered all structures within the planned scope, achieving required quality standards and project timelines."
+        }
+      ]
+    },
+
+    {
+      "id": 3,
+      "client": "GRINDWELL NORTON LIMITED",
+      "cards": [
+        {
+          "id": 1,
+          "image": "/images/clients/client-08.8b86e021.jpg",
+          "title": "RCC Machine Foundation Modification",
+          "overview": {
+            "requirement": "Modify existing foundation under strict safety and limited space conditions within deadline.",
+            "completion": "Executed successfully with proper planning and delivered within 15 days timeline.",
+            "media": {
+              "images": [
+                "/images/projects/site8.jpg",
+                "/images/projects/site9.jpg"
+              ],
+              "videos": [
+                "https://www.youtube.com/embed/dQw4w9WgXcQ"
+              ]
             }
           }
-        ]
-      },
-      {
-        "id": 1774504943135,
-        "client": "MALL CONSTRUCTION",
-        "cards": [
-          {
-            "id": 1774504955279,
-            "image": "/images/clients/client-07.98be525d.jpg",
-            "title": "Inventys-Fire Water Tank, Butibori, nagpur",
-            "overview": {
-              "challenge": "Construction of a 27 lakh litre fire water tank involving large-capacity RCC works, strict fire safety compliance, waterproofing requirements, and coordination within an operational industrial environment.",
-              "result": "Successfully delivered a fully compliant and leak-proof fire water tank meeting capacity, safety standards, and project timelines."
+        }
+      ]
+    },
+
+    {
+      "id": 4,
+      "client": "LEMKEN India Agro Equipment Pvt Ltd",
+      "cards": [
+        {
+          "id": 1,
+          "image": "/images/clients/client-04.0b7c6231.jpg",
+          "title": "Compound Wall Construction",
+          "overview": {
+            "requirement": "Reconstruction of collapsed wall with better support and structural stability.",
+            "completion": "Rebuilt wall with RCC columns ensuring safety, durability and improved strength.",
+            "media": {
+              "images": [
+                "/images/projects/site10.jpg",
+                "/images/projects/site11.jpg"
+              ],
+              "videos": []
             }
           }
-        ]
-      }
-    ]
-  },
+        }
+      ]
+    }
+  ]
+},
   "serviceOverview": {
     "visible": true,
     "title": "OUR SERVICE OVERVIEW",
@@ -481,7 +462,7 @@
     "title": "Contact Us",
     "backgroundImage": "/images/background/abouthero.building1.4f65b51a.jpg",
     "formTitle": "Send Your Inquiry",
-    "receiverEmail": "info@dras.com",
+    "receiverEmail": "bycc.mohan@gmail.com",
     "mapEmbed": "https://maps.google.com/maps?q=nagpur&output=embed"
   }
 }
