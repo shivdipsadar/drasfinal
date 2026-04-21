@@ -17,10 +17,7 @@ export default function ServiceCard({ icon, title, description }) {
         {description}
       </p>
 
-      {/* Button */}
-      <button className="border border-blue-600 text-blue-600 px-6 py-2 rounded-md hover:bg-blue-600 hover:text-white transition">
-        Read More
-      </button>
+      
 
     </div>
   );
