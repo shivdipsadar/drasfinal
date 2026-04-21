@@ -5,6 +5,7 @@ import ServiceOverview from "../components/ServiceOverview";
 import Sectors from "../components/Sectors";
 import PageHero from "../components/PageHero";
 import ProjectsSlider from "../components/ProjectsSlider";
+import UpcomingProjectsMarquee from "../components/UpcomingProjectsMarquee";
 
 const Projects = () => {
   const { data, loading, error } = useData();
@@ -47,6 +48,10 @@ const Projects = () => {
       {/* PROJECTS */}
       {data.projects?.visible && data.projects?.items?.length > 0 && (
         <ProjectsSlider data={data.projects} />
+      )}
+      {data.upcomingProjects?.visible &&
+          data.upcomingProjects?.items?.length > 0 && (
+        <UpcomingProjectsMarquee data={data.upcomingProjects} />
       )}
 
       {/* SECTORS */}

@@ -39,7 +39,7 @@
         "id": 1,
         "title": "BHARAT YUGA CONSTRUCTION COMPANY- PROJECTS",
         "subtitle": "BYCC- PROJECTS",
-        "image": "./images/slider/slider-01.0025ffb4.jpg",
+        "image": "/images/1776601328380-PG-Hall Photo.jpg",
         "button": "Our Projects",
         "link": "projects"
       },
@@ -47,15 +47,15 @@
         "id": 2,
         "title": "POWERGRID PROJECTS",
         "subtitle": "POWEGRID PROJECTS",
-        "image": "./images/slider/slider-02.98196328.jpg",
+        "image": "/images/1776601757627-PG-Vigilance Photo1.jpg",
         "button": "View Work",
         "link": "projects"
       },
       {
         "id": 3,
-        "title": "GRINDWELL NORTON PROJECTS",
-        "subtitle": "GRINDWELL NORTON PROJECTS",
-        "image": "/images/1776586877646-background.png",
+        "title": "JOGA LOGISTICS PARK",
+        "subtitle": "JOGA PEB SHED ",
+        "image": "/images/1776601419717-Joga-Shed work.jpg",
         "button": "Explore More",
         "link": "about"
       }
@@ -170,7 +170,7 @@
       }
     ]
   },
-  "projects": {
+   "projects": {
   "visible": true,
   "title": "SOME OF OUR PROMINENT PROJECTS",
   "items": [
@@ -292,6 +292,27 @@
     }
   ]
 },
+"upcomingProjects": {
+  "visible": true,
+  "title": "Upcoming Projects",
+  "items": [
+    {
+      "id": 1,
+      "title": "New Industrial Shed Project",
+      "image": "/images/projects/site1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Commercial Office Renovation",
+      "image": "/images/projects/site2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Residential Building Work",
+      "image": "/images/projects/site3.jpg"
+    }
+  ]
+},
   "serviceOverview": {
     "visible": true,
     "title": "OUR SERVICE OVERVIEW",
@@ -351,7 +372,7 @@
       "Project",
       "Contact US"
     ],
-    "copyright": "Copyright BYCC ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© 2026 | All rights reserved",
+    "copyright": "Copyright BYCC ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© 2026 | All rights reserved",
     "brand": "DRAS",
     "designer": "",
     "background": "/images/background/footer-pattern.png"
@@ -397,7 +418,7 @@
     ]
   },
   "sectors": {
-    "visible": true,
+    "visible": false,
     "title": "OUR SECTORS",
     "items": [
       {
@@ -462,7 +483,7 @@
     "title": "Contact Us",
     "backgroundImage": "/images/background/abouthero.building1.4f65b51a.jpg",
     "formTitle": "Send Your Inquiry",
-    "receiverEmail": "bycc.mohan@gmail.com",
+    "receiverEmail": "info@dras.com",
     "mapEmbed": "https://maps.google.com/maps?q=nagpur&output=embed"
   }
 }

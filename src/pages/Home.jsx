@@ -7,6 +7,7 @@ import OurClients from "../components/OurClients";
 import KeyServices from "../components/KeyServices";
 import ProjectsSlider from "../components/ProjectsSlider";
 import ServiceOverview from "../components/ServiceOverview";
+import UpcomingProjectsMarquee from "../components/UpcomingProjectsMarquee";
 
 const Home = () => {
   const { data, loading, error } = useData();
@@ -54,6 +55,11 @@ const Home = () => {
       {/* PROJECTS */}
       {data.projects?.visible && data.projects?.items?.length > 0 && (
         <ProjectsSlider data={data.projects} />
+      )}
+      {/* UPCOMING PROJECTS */}
+      {data.upcomingProjects?.visible &&
+        data.upcomingProjects?.items?.length > 0 && (
+          <UpcomingProjectsMarquee data={data.upcomingProjects} />
       )}
 
       {/* SERVICE OVERVIEW ✅ FIXED */}

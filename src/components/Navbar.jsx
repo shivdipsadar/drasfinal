@@ -82,9 +82,13 @@ export default function Navbar({ data }) {
         <div className="hidden md:flex items-center border-l pl-6 ml-6">
           <div>
             <p className="text-xs text-gray-500">Call Us:</p>
-            <p className="font-semibold text-black text-lg">
+
+            <a
+              href={`tel:${nav.phone || "+919999999999"}`}
+              className="font-semibold text-black text-lg hover:text-blue-600 transition"
+            >
               {nav.phone || "+91 XXXXXXXX"}
-            </p>
+            </a>
           </div>
         </div>
 
