@@ -4,7 +4,7 @@ import useData from "../hooks/useData";
 import AboutSection from "../components/About";
 import VisionaryCard from "../components/VisionaryCard";
 import ValuesSection from "../components/ValuesSection";
-import ServiceOverview from "../components/ServiceOverview";
+
 import PageHero from "../components/PageHero";
 
 import { getImageUrl } from "../utils/api";
@@ -43,9 +43,7 @@ const About = () => {
         <ValuesSection data={data.values} />
       )}
 
-      {data.serviceOverview?.visible && (
-        <ServiceOverview data={data.serviceOverview} />
-      )}
+      
     </>
   );
 };
