@@ -27,7 +27,7 @@ const About = () => {
       {data.aboutPage?.hero?.visible && (
         <PageHero
           title={data.aboutPage.hero.title}
-          backgroundImage={(data.about.bg-)}
+          backgroundImage={(data.about.bgImage)}
         />
       )}
 

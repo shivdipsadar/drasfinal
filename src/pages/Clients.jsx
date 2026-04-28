@@ -74,7 +74,7 @@ export default function Clients() {
         <PageHero
           title={data?.clientsPage?.hero?.title || "Our Clients"}
           backgroundImage={
-            data?.clientsPage?.hero?.background ||
+            data?.clients.bgImage ||
             "/images/background/abouthero.building1.4f65b51a.jpg"
           }
         />
