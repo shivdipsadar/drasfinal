@@ -1,8 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import { getImageUrl } from "../utils/api";
+import { useMemo } from "react";
+import React from "react";
 
-export default function ProjectCard({ image, title, projectId, cardId }) {
+function ProjectCard({ image, title, projectId, cardId }) {
   const navigate = useNavigate();
+
+  const imageUrl = useMemo(() => getImageUrl(image), [image]);
 
   return (
     <div
@@ -12,11 +16,13 @@ export default function ProjectCard({ image, title, projectId, cardId }) {
       {/* IMAGE */}
       <div className="bg-gray-200 flex items-center justify-center h-40">
         <img
-          src={getImageUrl(image)}
+          src={imageUrl}
           alt={title}
           className="max-h-20 object-contain"
+          loading="lazy"
           onError={(e) => {
-            e.target.src = "https://via.placeholder.com/150";
+            e.currentTarget.onerror = null;
+            e.currentTarget.src = "/dras-logo.jpeg";
           }}
         />
       </div>
@@ -28,3 +34,5 @@ export default function ProjectCard({ image, title, projectId, cardId }) {
     </div>
   );
 }
+
+export default React.memo(ProjectCard);

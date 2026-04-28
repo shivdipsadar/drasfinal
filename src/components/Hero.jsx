@@ -4,6 +4,8 @@ import { Link } from "react-scroll";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { getImageUrl } from "../utils/api";
 import { useNavigate } from "react-router-dom";
+import { useMemo } from "react";
+import React from "react";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -32,10 +34,14 @@ function PrevArrow({ onClick }) {
   );
 }
 
-export default function Hero({ data }) {
-  const slides = data?.slides || [];
+function Hero({ data }) {
+  const navigate = useNavigate();
 
-  const settings = {
+  // ✅ Memoize slides
+  const slides = useMemo(() => data?.slides || [], [data]);
+
+  // ✅ Memoize slider settings
+  const settings = useMemo(() => ({
     dots: true,
     infinite: true,
     autoplay: true,
@@ -48,7 +54,7 @@ export default function Hero({ data }) {
     dotsClass: "slick-dots hero-dots",
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-  };
+  }), []);
 
   // ❗ Empty state
   if (!slides.length) {
@@ -58,71 +64,75 @@ export default function Hero({ data }) {
       </section>
     );
   }
-const navigate = useNavigate();
+
   return (
     <section className="w-full relative">
       <Slider {...settings}>
-        {slides.map((slide, index) => (
-          <div key={slide.id || index} className="relative h-[80vh] md:h-[95vh]">
+        {slides.map((slide, index) => {
+          // ✅ Memoize image URL per slide
+          const imageUrl = getImageUrl(slide.image);
 
-            {/* Background Image */}
-            <img
-              src={getImageUrl(slide.image)}
-              alt={slide.title}
-              className="absolute w-full h-full object-cover"
-              onError={(e) => {
-                e.target.src =
-                  "https://via.placeholder.com/1200x600?text=No+Image";
-              }}
-            />
+          return (
+            <div key={slide.id || index} className="relative h-[80vh] md:h-[95vh]">
 
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-black/30"></div>
+              {/* Background Image */}
+              <img
+                src={imageUrl}
+                alt={slide.title}
+                className="absolute w-full h-full object-cover"
+                loading="lazy"
+                onError={(e) => {
+                  console.log(e);
+                }}
+              />
 
-            {/* Content */}
-            <div className="relative h-full flex items-center justify-center text-center px-6">
-              <motion.div
-                key={slide.id}
-                initial={{ opacity: 0, y: 80 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="max-w-3xl text-white"
-              >
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black/30"></div>
 
-                {/* Title */}
-                {/* {slide.title && (
-                  <p className="text-blue-400 uppercase tracking-widest mb-3">
-                    {slide.title}
-                  </p>
-                )} */}
-                {slide.title && (
-                  <p className="text-white uppercase tracking-widest mb-3 font-bold italic underline">
-                    {slide.title}
-                  </p>
-                )}
-                {/* Subtitle */}
-                {slide.subtitle && (
-                  <h1 className="text-3xl md:text-5xl font-bold mb-6">
-                    {slide.subtitle}
-                  </h1>
-                )}
+              {/* Content */}
+              <div className="relative h-full flex items-center justify-center text-center px-6">
+                <motion.div
+                  key={slide.id}
+                  initial={{ opacity: 0, y: 80 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8 }}
+                  className="max-w-3xl text-white"
+                >
 
-                {/* Button */}
-               {slide.button && slide.link && (
-  <button
-    onClick={() => navigate(`/projects`)}   // 🔥 navigation
-    className="inline-block bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-lg text-lg font-semibold cursor-pointer transition"
-  >
-    {slide.button}
-  </button>
-)}
+                  {/* Title */}
+                  {slide.title && (
+                    <p className="text-white uppercase tracking-widest mb-3 font-bold italic underline">
+                      {slide.title}
+                    </p>
+                  )}
 
-              </motion.div>
+                  {/* Subtitle */}
+                  {slide.subtitle && (
+                    <h1 className="text-3xl md:text-5xl font-bold mb-6">
+                      {slide.subtitle}
+                    </h1>
+                  )}
+
+                  {/* Button */}
+                  {slide.button && slide.link && (
+                    <button
+                      onClick={() => navigate(`/projects`)}
+                      className="inline-block bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-lg text-lg font-semibold cursor-pointer transition"
+                    >
+                      {slide.button}
+                    </button>
+                  )}
+
+                </motion.div>
+              </div>
+
             </div>
-
-          </div>
-        ))}
+          );
+        })}
       </Slider>
     </section>
   );
 }
+
+// ✅ Prevent unnecessary re-renders
+export default React.memo(Hero);

@@ -2,6 +2,7 @@ import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { getImageUrl } from "../utils/api";
 
+
 export default function AboutSection({ data }) {
   const sectionRef = useRef(null);
   const about = data?.items?.[0];
@@ -28,9 +29,17 @@ export default function AboutSection({ data }) {
   if (!about) return null;
 
   return (
-    <section ref={sectionRef} className="py-20 relative">
+    <section
+      ref={sectionRef}
+      className="py-20 relative bg-cover bg-center"
+      style={{
+        backgroundImage: `url(${getImageUrl(about.Image)})`,
+      }}
+    >
+      {/* 🔥 overlay for readability */}
+      <div className="absolute inset-0 bg-white/80"></div>
 
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-6 items-center">
+      <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-6 items-center">
 
         {/* IMAGE */}
         <div className="about-image flex justify-center">
@@ -38,6 +47,10 @@ export default function AboutSection({ data }) {
             src={getImageUrl(about.image)}
             alt="about"
             className="w-[300px] shadow-lg"
+            onError={(e) => {
+              e.currentTarget.onerror = null;
+              e.currentTarget.src = "/fallback.png";
+            }}
           />
         </div>
 
