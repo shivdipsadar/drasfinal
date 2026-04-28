@@ -1,121 +1,197 @@
-import { useLayoutEffect, useRef, useState } from "react";
-import gsap from "gsap";
-import { getImageUrl } from "../utils/api";
+import React, { useState } from "react";
+import PageHero from "../components/PageHero";
+import useData from "../hooks/useData";
 
-export default function AboutSection({ data }) {
-  const sectionRef = useRef(null);
-  const about = data?.items?.[0];
+const ContactUs = () => {
+  const { data, loading, error } = useData();
+  const [submitted, setSubmitted] = useState(false);
 
-  const [mobile, setMobile] = useState("");
-  const [error, setError] = useState("");
+  const contactData = data?.contact;
 
-  useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.from(".about-image", {
-        x: -120,
-        opacity: 0,
-        duration: 1,
-      });
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-      gsap.from(".about-text > *", {
-        y: 60,
-        opacity: 0,
-        stagger: 0.2,
-        duration: 0.9,
-      });
-    }, sectionRef);
+    const form = e.target;
 
-    return () => ctx.revert();
-  }, []);
+    const firstname = form.firstname.value;
+    const lastname = form.lastname.value;
+    const email = form.email.value;
+    const mobile = form.mobile.value;
+    const message = form.message.value;
 
-  if (!about) return null;
+    // ✅ MOBILE VALIDATION (ONLY ADDITION)
+    const mobileRegex = /^[6-9]\d{9}$/;
+    if (!mobileRegex.test(mobile)) {
+      alert("Please enter a valid 10-digit mobile number");
+      return;
+    }
 
-  // ✅ Mobile validation (India format)
-  const handleMobileChange = (e) => {
-    const value = e.target.value;
+    const inquiryTime = new Date().toLocaleString("en-IN", {
+      day: "2-digit",
+      month: "short",
+      year: "numeric",
+      hour: "numeric",
+      minute: "2-digit",
+      hour12: true,
+    });
 
-    // Allow only numbers
-    if (!/^\d*$/.test(value)) return;
+    const payload = {
+      To: contactData.receiverEmail,
+      Subject: `Inquiry on DRAS Website | ${inquiryTime}`,
+      Body: `
+Name: ${firstname} ${lastname}
+Email: ${email}
+Phone: ${mobile}
 
-    setMobile(value);
+Message:
+${message}
+      `,
+    };
 
-    // Validate 10 digit Indian mobile number
-    if (value.length === 10 && /^[6-9]\d{9}$/.test(value)) {
-      setError("");
-    } else {
-      setError("Enter valid 10-digit mobile number");
+    try {
+      await fetch(
+        "https://prod-11.westindia.logic.azure.com:443/workflows/c70198654a414a82b3ed72853ec57ffb/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=_dKSmxb3VSM7gsFuuM1N1mqaR3FZ0HKnJF_iI3L5GyE",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
+
+      setSubmitted(true);
+      form.reset();
+    } catch (error) {
+      console.error("Submission failed:", error);
     }
   };
 
+  // 🔄 Loading
+  if (loading)
+    return (
+      <div className="h-screen flex items-center justify-center">
+        Loading...
+      </div>
+    );
+
+  // ❌ Error
+  if (error) return <div>Error loading data</div>;
+
+  if (!contactData) return null;
+
   return (
-    <section
-      ref={sectionRef}
-      className="py-20 relative bg-cover bg-center"
-      style={{
-        backgroundImage: `url(${data?.bgImage || ""})`, // ✅ FIXED
-      }}
-    >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-white/80"></div>
+    <>
+      {/* HERO */}
+      {data?.contactPage?.hero?.visible !== false && (
+        <PageHero
+          title={data?.contactPage?.hero?.title || contactData.title}
+          backgroundImage={
+            data?.contactPage?.hero?.background ||
+            contactData.backgroundImage
+          }
+        />
+      )}
 
-      <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-6 items-center">
-        
-        {/* IMAGE */}
-        <div className="about-image flex justify-center">
-          <img
-            src={getImageUrl(about.image)}
-            alt="about"
-            className="w-[300px] shadow-lg"
-            onError={(e) => {
-              e.currentTarget.onerror = null;
-              e.currentTarget.src = "/fallback.png";
-            }}
-          />
-        </div>
+      <section className="py-20 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-stretch">
 
-        {/* TEXT */}
-        <div className="about-text max-w-xl">
-          <p className="text-gray-700 tracking-widest mb-3 text-sm">
-            {about.welcome}
-          </p>
-
-          <h2 className="text-4xl font-bold mb-4">
-            {about.title}{" "}
-            <span className="text-blue-600">{about.highlight}</span>
-          </h2>
-
-          <div className="w-32 h-[3px] bg-black mb-6"></div>
-
-          <p className="text-gray-700 mb-4">{about.paragraph1}</p>
-          <p className="text-gray-700 mb-6">{about.paragraph2}</p>
-
-          {/* ✅ Mobile Input */}
-          <div className="mb-4">
-            <input
-              type="text"
-              value={mobile}
-              onChange={handleMobileChange}
-              placeholder="Enter Mobile Number"
-              className="w-full p-3 border rounded"
-              maxLength={10}
-            />
-            {error && (
-              <p className="text-red-500 text-sm mt-1">{error}</p>
-            )}
+          {/* MAP */}
+          <div className="h-[500px] rounded-lg overflow-hidden shadow-md">
+            <iframe
+              title="Location"
+              src={contactData.mapEmbed}
+              className="w-full h-full border-0"
+              loading="lazy"
+            ></iframe>
           </div>
 
-          <button
-            disabled={error || mobile.length !== 10}
-            className={`px-6 py-2 text-white rounded ${
-              error || mobile.length !== 10
-                ? "bg-gray-400 cursor-not-allowed"
-                : "bg-blue-500"
-            }`}
-          >
-            {about.button}
-          </button>
+          {/* FORM */}
+          <div className="h-[500px] flex flex-col justify-center">
+
+            {!submitted ? (
+              <>
+                <h2 className="text-3xl font-semibold mb-8 text-center">
+                  {contactData.formTitle}
+                </h2>
+
+                <form className="space-y-6" onSubmit={handleSubmit}>
+
+                  {/* NAME */}
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <input
+                      type="text"
+                      name="firstname"
+                      placeholder="Enter Firstname"
+                      required
+                      className="w-full p-3 border rounded-md"
+                    />
+
+                    <input
+                      type="text"
+                      name="lastname"
+                      placeholder="Enter Lastname"
+                      required
+                      className="w-full p-3 border rounded-md"
+                    />
+                  </div>
+
+                  {/* EMAIL + MOBILE */}
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Enter Email"
+                      required
+                      className="w-full p-3 border rounded-md"
+                    />
+
+                    <input
+                      type="text"
+                      name="mobile"
+                      placeholder="Enter Mobile"
+                      required
+                      maxLength={10}
+                      className="w-full p-3 border rounded-md"
+                    />
+                  </div>
+
+                  {/* MESSAGE */}
+                  <textarea
+                    rows="4"
+                    name="message"
+                    placeholder="Enter Message"
+                    required
+                    className="w-full p-3 border rounded-md"
+                  ></textarea>
+
+                  {/* SUBMIT */}
+                  <button
+                    type="submit"
+                    className="w-full bg-blue-700 hover:bg-blue-800 text-white py-3 rounded-md transition"
+                  >
+                    Submit Enquiry
+                  </button>
+
+                </form>
+              </>
+            ) : (
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-blue-700 mb-3">
+                  Inquiry Submitted 🎉
+                </h3>
+                <p className="text-gray-600">
+                  Thank you for contacting us. Our team will get back to you shortly.
+                </p>
+              </div>
+            )}
+
+          </div>
+
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
-}
+};
+
+export default ContactUs;

@@ -50,8 +50,7 @@ export default function ProjectOverview() {
       <PageHero
         title="Project Overview"
         backgroundImage={
-          getImageUrl(card.image) ||
-          "https://via.placeholder.com/1200x400"
+          getImageUrl(card.image) || "/dras-logo.jpeg" // ✅ fallback added
         }
       />
 
@@ -71,10 +70,10 @@ export default function ProjectOverview() {
 
         {/* 1️⃣ CLIENT REQUIREMENT */}
         <div className="border-b py-6">
-          <h3 className="text-lg font-semibold mb-2">
+          <h3 className="text-lg font-semibold mb-2"> {/* ✅ increased */}
             1. Client Requirement
           </h3>
-          <p className="text-gray-600 text-sm">
+          <p className="text-black text-base"> {/* ✅ increased */}
             {card?.overview?.requirement || "No data available"}
           </p>
         </div>
@@ -85,13 +84,13 @@ export default function ProjectOverview() {
             2. Site Photos
           </h3>
 
-          {/* IMAGES GRID */}
+          {/* IMAGES */}
           {images.length > 0 ? (
             <div className="grid md:grid-cols-3 gap-4 mb-6">
               {images.map((img, index) => (
                 <img
                   key={index}
-                  src={getImageUrl(img)}
+                  src={getImageUrl(img) || "./dras-logo.jpeg"} // ✅ fallback added
                   alt={`Site ${index}`}
                   className="w-full h-48 object-cover rounded-lg"
                 />
@@ -122,10 +121,10 @@ export default function ProjectOverview() {
 
         {/* 3️⃣ FINAL COMPLETION */}
         <div className="py-6">
-          <h3 className="text-lg font-semibold mb-2">
+          <h3 className="text-lg font-semibold mb-2"> {/* ✅ increased */}
             3. Final Completion
           </h3>
-          <p className="text-gray-600 text-sm">
+          <p className="text-black text-base"> {/* ✅ increased */}
             {card?.overview?.completion || "No data available"}
           </p>
         </div>
