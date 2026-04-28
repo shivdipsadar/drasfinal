@@ -144,7 +144,7 @@
     ]
   },
   "services": {
-    "visible": false,
+    "visible": true,
     "title": "OUR KEY SERVICES",
     "items": [
       {
